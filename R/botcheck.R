@@ -39,7 +39,8 @@ botcheck = function(user) {
   # Make the API request
   result = POST("https://osome-botometer.p.mashape.com/2/check_account",
                  encode="json",
-                 add_headers(`X-Mashape-Key`=Mashape_key),
+                 add_headers(`X-RapidAPI-Host`= 'osome-botometer.p.rapidapi.com'),
+                 add_headers(`X-RapidAPI-Key`= rapidKey),
                  body=body_json)
   
   # Parse result
