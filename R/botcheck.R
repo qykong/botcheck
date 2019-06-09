@@ -47,6 +47,6 @@ botcheck = function(user) {
   result = content(result, as = "parsed")
   
   # Return "English" score
-  return(result$scores$english)
+  return(result)
 }
 
